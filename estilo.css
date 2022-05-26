@@ -1,0 +1,412 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Encabezado*/
+header {
+    font-family: 'Roboto Flex', sans-serif;
+    color: whitesmoke;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    grid-area: header;
+}
+.titulos {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.monumental {
+    display: block;
+    margin: 0 auto;
+}
+body {
+    background-color: whitesmoke;
+    font-family: 'Roboto Flex', sans-serif;  
+}
+h1 {color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+}
+h3 {
+    padding: 10px;
+    text-align: center;
+}
+.plantel {
+    margin: 5%;
+}
+
+/*Menú de navegación*/
+
+.menu {
+    list-style-type: none;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: double 6px white;
+    border-bottom: double 6px rgba(255, 0, 0, 0.722);
+    border-left: double 6px white;
+    border-right: double 6px rgba(255, 0, 0, 0.722);
+    background-color: rgb(37, 36, 36);
+}
+nav {
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+.menu li {
+    text-align: center;
+    margin: 0.7rem;
+    padding: 0.7rem;
+}
+.menu li a {
+    text-decoration: none;
+    color: whitesmoke;
+    display: flex;
+}
+.menu li :hover {
+    background-color: rgba(255, 0, 0, 0.722);
+}
+
+/*Cuerpo del index*/
+
+main {
+    padding: 5%; 
+    margin-top: 2.5%; 
+}
+.seccion1 {
+    height: auto;
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;   
+    border-top: double 6px lightgray;
+    border-bottom: double 6px rgba(255, 0, 0, 0.722);
+    border-left: double 6px lightgray;
+    border-right: double 6px rgba(255, 0, 0, 0.722);
+}
+p {
+    padding: 10px;
+}
+/*aside*/
+
+.asideTablas {
+    padding: 5%;
+    justify-content: center;
+}
+.iframe1 {
+    padding: 10px;
+}
+.iframe2 {
+    padding: 10px;
+}
+.aside {
+    display: flex;
+    flex-flow: column;
+}
+
+/*pie de página*/
+
+footer {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footerContacto {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.pagOf {
+    padding: 10px;
+}
+.ig {
+    padding: 5px;
+}
+.tw {
+    padding: 10px;
+}
+.facebook {
+    padding: 10px;
+}
+.tiktok {
+    padding: 10px;
+}
+.youtube {
+    padding: 10px;
+}
+
+/*Clasificación*/
+
+.liga {
+    margin-top: 5px;
+}
+
+h2 {
+    padding: 10px;
+    
+}
+h4 {
+    padding: 10px;
+}
+.tablas {
+    padding: 10%;
+   
+}
+table {
+    background-color: white;
+    text-align: center;
+    border-collapse: collapse;
+    width: 70%;   
+}
+
+tr td {
+    padding: 10px;
+}
+thead {
+    background-color: lightgray;
+    border-bottom: solid 2px;
+}
+.river {
+    background-color: rgb(26, 165, 26);
+}    
+.fortaleza {
+    background-color: rgb(113, 215, 113);
+}
+.coloColo {
+    background-color: rgb(26, 165, 26);
+}
+.clasificado {
+    background-color: rgb(26, 165, 26);
+}
+
+/*Link para ver tablas de posiciones completas*/
+.link {
+    padding: 10px;
+    margin-top: 10%;
+}
+.link a {
+    text-decoration: none;
+    color: black;
+}
+.link :hover {
+    background-color: rgba(255, 0, 0, 0.722);
+   color: white;
+} 
+
+/*Contacto*/
+
+.containerContacto {
+    background-image: url(/img/estadio-monumental-river-plate.png);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: large;
+}
+.containerContacto::before {
+    content: "";
+    background: fixed;
+    background-color: lightgray;
+    width: 100%;
+    min-height: 100vh;
+    opacity: 0.3;
+    position: absolute;
+}
+.containerContacto h2, h4, form {
+    position: relative;
+}
+.asideContacto h2, h4, ul, ul a {
+    position: relative;
+}
+form {
+    margin: 20px;
+}
+textarea {
+    resize: none;
+    background: none;
+    border: solid 2px black;
+}
+input {
+    background: none;
+    border: solid 2px black;
+}
+h4 {
+    margin: 20px;
+}
+h2 {
+    margin-top: 20px;
+}
+.links {
+    list-style-type: none;
+}
+.links li {
+    padding: 1%;
+}
+.links li a {
+    text-decoration: none;
+    color: black;
+}
+.links li :hover {
+    background-color: rgba(255, 0, 0, 0.722);
+}
+
+/*Partidos*/
+
+.fixture {
+    text-align: center;
+    font-family: 'Roboto Flex', sans-serif
+}
+
+/*Grid general*/
+
+.body {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: whitesmoke;
+}
+.header {
+grid-column: 1/3;
+grid-row: 1/2;
+}
+
+.container {
+grid-column: 1/3;
+display: flex;
+gap: 1px;
+}
+
+.main {
+    width: 100%;
+}
+
+.aside {
+    width: 40%;
+    margin: auto;
+}
+
+.footer {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    }
+
+ /*Grid Contacto*/
+
+.containerContacto {
+grid-column: 1/3;
+display: flex;
+gap: 1px;
+}
+.mainForm {
+    width: 50%;
+    margin: auto;
+}
+.asideContacto {
+    width: 50%;
+    margin: auto;
+}
+
+/*Grid Clasificación*/
+
+.containerTablas {
+    grid-column: 1/3;
+    display: flex;
+}
+.mainTablas {
+    width: 50%;
+    margin: auto;
+}
+
+.asideTablas {
+    width: 50%;
+    margin: auto;
+}
+.noticia {
+    text-align: center;
+    width: 25rem;
+}
+
+.parrafoAside {
+    text-align: center;
+    width: 25rem;
+    margin: auto;
+}
+
+/*Grid Partidos*/
+
+.containerPartidos {
+    grid-column: 1/3;
+    display: flex;
+}
+.fixture {
+    width: 60%;
+}
+.asidePartidos {
+    width: auto;
+    padding: 5%;
+    margin: auto;
+}
+
+/*Medias Queries*/
+
+@media (max-width:768px){
+
+    .header {
+        flex-direction: column;
+        background-color: whitesmoke;
+    }
+    
+    .titulos {
+        color: black;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu {
+        flex-direction: column;
+        border: none;
+    }
+    .aside {
+    height: auto;
+    width: auto;
+    margin: 4%;
+    }
+    .containerTablas {
+        flex-direction: column;
+    }
+    .mainTablas {
+        margin: 4%;
+    }
+    .asideTablas {
+        height: auto;
+        width: auto;
+        margin: 4%;
+        }
+    .containerPartidos {
+        flex-direction: column;
+    }
+    .asidePartidos {
+        height: auto;
+        width: auto;
+        margin: 4%;
+    }
+    .containerContacto {
+        flex-direction: column;
+        margin: 4%;
+        padding: 4%;
+    }
+    .asideContacto {
+        height: auto;
+        width: auto;
+        margin: 4%;
+    }  
+}
