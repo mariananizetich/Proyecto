@@ -409,4 +409,6 @@ gap: 1px;
         width: auto;
         margin: 4%;
     }  
-}
+   textarea {
+       resize: horizontal;
+   }
