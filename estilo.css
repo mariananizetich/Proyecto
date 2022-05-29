@@ -391,13 +391,16 @@ gap: 1px;
         width: auto;
         margin: 4%;
         }
+    table {
+        width: 45%;
+    }
     .containerPartidos {
         flex-direction: column;
+        justify-content: left;
     }
     .asidePartidos {
-        height: auto;
-        width: auto;
-        margin: 4%;
+        justify-content: center;
+        
     }
     .containerContacto {
         flex-direction: column;
@@ -411,4 +414,10 @@ gap: 1px;
     }  
    textarea {
        resize: horizontal;
+   }
+   .noticia img a {
+       width: 250px;
+   }
+   aside img {
+       width: 300px;
    }
