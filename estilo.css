@@ -101,10 +101,6 @@ p {
 }
 /*aside*/
 
-.asideTablas {
-    padding: 5%;
-    justify-content: center;
-}
 .iframe1 {
     padding: 10px;
 }
@@ -171,8 +167,13 @@ h4 {
     padding: 10px;
 }
 .tablas {
-    padding: 10%;
+    padding: 5%;
+    justify-content: center;
    
+}
+.asideTablas {
+    padding: 5%;
+    justify-content: center;
 }
 table {
     background-color: white;
