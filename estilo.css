@@ -13,10 +13,14 @@ header {
     flex-flow: column nowrap;
     grid-area: header;
 }
+
+
 .titulos {
     display: flex;
     flex-flow: column nowrap;
 }
+
+
 .monumental {
     display: block;
     margin: 0 auto;
@@ -68,6 +72,12 @@ nav {
 }
 .menu li :hover {
     background-color: rgba(255, 0, 0, 0.722);
+    transform: scale(1.1, 1.1);
+    transition: all 1s;
+}
+.menu a:hover {
+    transform: scale(1.2, 1.2);
+    transition: all 1s;
 }
 
 /*Cuerpo del index*/
@@ -76,6 +86,7 @@ main {
     padding: 5%; 
     margin-top: 2.5%; 
 }
+
 .seccion1 {
     height: auto;
     padding: 10px;
@@ -91,10 +102,6 @@ p {
 }
 /*aside*/
 
-.asideTablas {
-    padding: 5%;
-    justify-content: center;
-}
 .iframe1 {
     padding: 10px;
 }
@@ -119,6 +126,14 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+footer a :hover {
+    transform: scale(1.2, 1.2);
+    transition: all 1s;
+}
+.footerContacto a:hover {
+    transform: scale(1.2, 1.2);
+    transition: all 1s;
 }
 .pagOf {
     padding: 10px;
@@ -153,8 +168,13 @@ h4 {
     padding: 10px;
 }
 .tablas {
-    padding: 10%;
+    padding: 5%;
+    justify-content: center;
    
+}
+.asideTablas {
+    padding: 5%;
+    justify-content: center;
 }
 table {
     background-color: white;
@@ -357,8 +377,7 @@ gap: 1px;
 
 /*Medias Queries*/
 
-@media (max-width:768px){
-
+@media (max-width:768px) {
     .header {
         flex-direction: column;
         background-color: whitesmoke;
@@ -391,13 +410,16 @@ gap: 1px;
         width: auto;
         margin: 4%;
         }
+    table {
+        width: 45%;
+    }
     .containerPartidos {
         flex-direction: column;
+        justify-content: left;
     }
     .asidePartidos {
-        height: auto;
-        width: auto;
-        margin: 4%;
+        justify-content: center;
+        
     }
     .containerContacto {
         flex-direction: column;
@@ -408,5 +430,18 @@ gap: 1px;
         height: auto;
         width: auto;
         margin: 4%;
+<<<<<<< HEAD
     }  
+   textarea {
+       resize: horizontal;
+   }
+   .noticia img a {
+       width: 250px;
+   }
+   aside img {
+       width: 300px;
+   }
+=======
+    }
 }
+>>>>>>> animaciones

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Roboto+Flex:opsz,wght@8..144,200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>CARP</title>
 </head>
 <body>
@@ -28,7 +29,7 @@
         </nav>
     </header>
 <div class="containerPartidos">
-<main class="fixture">
+<main class="fixture animate__animated animate__fadeInUp">
 
    <h2>Próximos partidos</h2>
 <section .copa> <!--Copa Libertadores--> 
@@ -61,18 +62,25 @@
    <p>River Plate - Tigre</p>
 
 </section>
+<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script> 
 </main>
-<aside class="asidePartidos">
+<aside class="asidePartidos animate__animated animate__fadeInUp">
         <div> <!--Aside-->
         <h2>Últimos partidos</h2>
         <iframe width="400" height="315" src="https://www.youtube.com/embed/USHdTQG_C00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="iframe1"></iframe>
         <br>
         <iframe width="400" height="315" src="https://www.youtube.com/embed/9raHEbawL_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="iframe2"></iframe>
     </div>
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script> 
 </aside>
-</div> 
-</body>
-</html>
+</div>
+
 <footer class="footer"> <!--Pie de página-->
     
     <a href="https://www.cariverplate.com.ar/" a target="_blank"><img src="../logos/logo-river-foot.png" alt="Página Oficial" width="60px" class="pagOf"></a>
@@ -88,3 +96,5 @@
     <a href="https://www.youtube.com/user/cariverplatetv" a target="_blank"><img src="../logos/Youtube.png" alt="YouTube" class="youtube"></a>
 
 </footer>
+</body>
+</html>
