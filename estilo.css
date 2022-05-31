@@ -220,7 +220,7 @@ thead {
 /*Contacto*/
 
 .containerContacto {
-    background-image: url(/img/estadio-monumental-river-plate.png);
+    background-image: url(./img/estadio-monumental-river-plate.png);
     background-repeat: no-repeat;
     min-height: 100vh;
     width: 100%;
