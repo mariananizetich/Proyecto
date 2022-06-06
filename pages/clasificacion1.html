@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Hoja de estilos-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!--Mi estilo css-->
     <link rel="stylesheet" href="../estilo.css">
     <link rel="shortcut icon" href="../imglogo.png">
@@ -17,27 +19,56 @@
     
 </head>
 <body>
-    <header class="header"> <!--Encabezado--> 
-        <h1 class="titulos">CLUB ATLÉTICO RIVER PLATE</h1> 
-        <img src="../img/monumental.png" alt="Monumental" width="450px" class="monumental">
-    <h3 class="titulos"> <i> Vivir y jugar con grandeza...</i> </h3>
-            <nav> <!--Menú de navegación-->
-                <ul class="menu">
-                    <a href="../index.html"><img src="../img/pixlr-bg-result.png" alt="Escudo de River" width="150px" class="logo"></a>
-                    <li> <a href="../index.html">INICIO</a> </li>
-                    <li> <a href="clasificacion1.html">CLASIFICACIÓN</a></li>
-                    <li> <a href="plantel.html">PLANTEL</a> </li>
-                    <li> <a href="partidos.html">PARTIDOS</a> </li>
-                    <li> <a href="contacto.html">CONTACTO</a> </li>
-                </ul>
-                </nav>
-    </header>
+    <header class="header">
+
+      <!--Menú de navegación-->
+
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./clasificacion1.html">Clasificación</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./plantel.html">Plantel</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./partidos.html">Partidos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!--Títulos del encabezado-->
+        
+        <div class="intro">
+            <a class="logo" href="../index.html"><img src="../img/pixlr-bg-result.png" width="195px" alt="Escudo River"></a>
+            <div class="col align-self-center">
+          <h2 class="titulos"><b>CLUB ATLÉTICO RIVER PLATE</b></h2> 
+            </div>
+            <div class="col align-self-end">
+          <h2 class="titulos"><i><b>Vivir y jugar con grandeza...</b></i></h2>
+            </div>
+        </div>
+      </header>
+
+      <!--Acá empieza el contenido-->
+
     <div class="containerTablas">
-    <main class="mainTablas animate__animated animate__fadeInUp"> <!--Tablas de posiciones-->
+    <main class="mainTablas animate__animated animate__fadeInUp">
         <section class="liga">
-        <h2>
-            Liga Profesional
-        </h2>
+        <h2><b>Liga Profesional</b> </h2>
         <table>
             <thead>
                 <tr>
@@ -112,7 +143,7 @@
               </table>
             </section>
             <section class="libertadores">
-                <h2>Copa Libertadores</h2>
+                <h2><b>Copa Libertadores</b></h2>
 
                 <h4>Grupo F</h4>
                 <table>
@@ -180,14 +211,20 @@
                 <a href="https://www.google.com/search?q=clasificaci%C3%B3n+river+plate&rlz=1C1ALOY_esES997ES997&oq=clasificaci%C3%B3n+river&aqs=chrome.1.69i57j0i512j0i22i30l4j0i10i22i30j0i22i30l2j0i10i22i30.8755j0j7&sourceid=chrome&ie=UTF-8#sie=t;/m/037d7f;2;/m/04hpk1;st;fp;1;;"a target="_blank">Para ver posiciones completas, hacé click acá</a>
             </section>
     </main>
-    <aside class="asideTablas animate__animated animate__fadeInUp"> <!--Aside-->
+
+    <!--Aside-->
+
+    <aside class="asideTablas animate__animated animate__fadeInUp"> 
         <h2>
-            La decisión de Gallardo tras la clasificación de River
+           <b>La decisión de Gallardo tras la clasificación de River</b> 
         </h2>
         <a href="https://www.tycsports.com/river-plate/river-libertadores-gallardo-id436531.html" a target="_blank"><img src="../img/MG.png" alt="Foto de Marcelo Gallardo" width="400px"></a>
     </aside>
 </div>
-<footer class="footer"> <!--Pie de página-->
+
+<!--Pie de página-->
+
+<footer class="footer"> 
     
     <a href="https://www.cariverplate.com.ar/" a target="_blank"><img src="../logos/Página Oficial.png" alt="Página Oficial" width="60px" class="pagOf"></a>
     
@@ -207,5 +244,7 @@
 <script>
 new WOW().init();
 </script>
+<!--Script Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

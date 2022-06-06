@@ -5,26 +5,28 @@
 }
 /*Encabezado*/
 header {
-    font-family: 'Roboto Flex', sans-serif;
-    color: whitesmoke;
-    background-color: black;
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
     grid-area: header;
 }
+.seccion0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
 
+.intro {
+    background-color: rgb(48, 47, 47);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
 .titulos {
-    display: flex;
-    flex-flow: column nowrap;
-}
+    color: whitesmoke;
+    }
 
-
-.monumental {
-    display: block;
-    margin: 0 auto;
-}
 body {
     background-color: whitesmoke;
     font-family: 'Roboto Flex', sans-serif;  
@@ -43,41 +45,32 @@ h3 {
 
 /*Menú de navegación*/
 
-.menu {
-    list-style-type: none;
-    margin: 0.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    border-top: double 6px white;
-    border-bottom: double 6px rgba(255, 0, 0, 0.722);
-    border-left: double 6px white;
-    border-right: double 6px rgba(255, 0, 0, 0.722);
-    background-color: rgb(37, 36, 36);
-}
-nav {
-    padding: 5px;
-    text-align: center;
-    width: 100%;
-}
-.menu li {
-    text-align: center;
-    margin: 0.7rem;
-    padding: 0.7rem;
-}
-.menu li a {
-    text-decoration: none;
-    color: whitesmoke;
-    display: flex;
-}
-.menu li :hover {
-    background-color: rgba(255, 0, 0, 0.722);
-    transform: scale(1.1, 1.1);
-    transition: all 1s;
-}
-.menu a:hover {
+
+.navbar-brand a:hover {
     transform: scale(1.2, 1.2);
     transition: all 1s;
+}
+
+.nav-item a {
+    margin: 0.9rem;
+    padding: 0.9rem;
+    color: rgb(37, 36, 36);
+    text-transform: uppercase;
+}
+
+a:hover {
+    background-color: whitesmoke;
+    transform: scale(1.2, 1.2);
+    transition: all 1s;
+}
+.nav-item a:hover {
+    color: rgba(255, 0, 0, 0.722);
+    transform: scale(1.2, 1.2);
+    transition: all 1s;
+}
+
+.logo:hover {
+    background: none;
 }
 
 /*Cuerpo del index*/
@@ -227,18 +220,18 @@ thead {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Roboto', sans-serif;
     color: black;
     font-size: large;
 }
 .containerContacto::before {
     content: "";
-    background: fixed;
+    background-repeat: repeat;
     background-color: lightgray;
-    width: 100%;
     min-height: 100vh;
+    width: 100%;
     opacity: 0.3;
     position: absolute;
+    background-attachment: fixed;
 }
 .containerContacto h2, h4, form {
     position: relative;
@@ -282,7 +275,6 @@ h2 {
 
 .fixture {
     text-align: center;
-    font-family: 'Roboto Flex', sans-serif
 }
 
 /*Grid general*/
@@ -390,10 +382,11 @@ gap: 1px;
         flex-direction: column;
         align-items: center;
     }
-    .menu {
+    .intro {
+        background-color: lightgray;
         flex-direction: column;
-        border: none;
     }
+    
     .aside {
     height: auto;
     width: auto;
@@ -415,8 +408,10 @@ gap: 1px;
     }
     .containerPartidos {
         flex-direction: column;
-        justify-content: left;
+        justify-content: center;
+        
     }
+    
     .asidePartidos {
         justify-content: center;
         
