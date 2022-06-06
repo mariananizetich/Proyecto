@@ -114,12 +114,7 @@ footer {
     flex-direction: row;
     justify-content: center;
 }
-.footerContacto {
-    background-color: lightgrey;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+
 footer a :hover {
     transform: scale(1.2, 1.2);
     transition: all 1s;
@@ -213,32 +208,10 @@ thead {
 /*Contacto*/
 
 .containerContacto {
-    background-image: url(./img/estadio-monumental-river-plate.png);
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: whitesmoke;
     color: black;
-    font-size: large;
 }
-.containerContacto::before {
-    content: "";
-    background-repeat: repeat;
-    background-color: lightgray;
-    min-height: 100vh;
-    width: 100%;
-    opacity: 0.3;
-    position: absolute;
-    background-attachment: fixed;
-}
-.containerContacto h2, h4, form {
-    position: relative;
-}
-.asideContacto h2, h4, ul, ul a {
-    position: relative;
-}
+
 form {
     margin: 20px;
 }
